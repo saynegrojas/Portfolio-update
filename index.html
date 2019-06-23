@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Greg Rojas Profile</title>
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- css fixed -->
+	<link rel="stylesheet" href="assets/css/fixed.css">
+</head>
+
+<body data-spy="scroll" data target="#navbarResponsive"> 
+
+<!--start home section-->
+<div id="home"></div>
+<!--end home section-->
+
+<!--navigation
+class navbar: expand Medium (md) devices (tablets, 768px and up) @media (min-width: 768px) { ... } 
+color: navbar-dark background: bg-dark position: fixed at the top	
+link: class navbar-brand img: source with alt button class: navbar-toggler:
+			 type: button 
+			 data-toggle: collapse
+			 data-target: id navbarResponsive
+span class navbar-toggler-icon-->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--div class collapse: type: navbar-collapse id: navbarResponsive ul class: navbar-nav ml auto: li class: nav-item: link class: nav-link-->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!--navbar without collapse layout in horizontal order. With collapse sets it to hamburger style and drops down when clicked on-->
+        <ul class="navbar-nav ml-auto">
+            <!--the layout of the list-->
+            <li class="nav-item">
+                <!--list of items in the navbar-->
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#main">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacts</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--end navigation-->
+
+<!--start landing page 
+front page at the top of the website landing class: inside fixed.css file home-wrap class: home-inner: where you put background image -->
+
+<div class="landing">
+    <div class="home-wrap">
+        <div class="home-inner">
+        </div>
+    </div>
+</div>
+
+<div class="caption text-center">
+    <h1>Greg Rojas</h1>
+    <h3>Portfolio</h3>
+    <a id="go-to-button" class="btn" href="#main">GO TO PAGE</a>
+</div>
+<!--end landing page-->
+
+
+<!--start main section-->
+
+<!--By default BS has 12 column section
+	specifying col-12 in class creates spacing below and above (margin) the text & button
+    narrow: (not BS) makes the column narrower -->
+
+<div id="main" class="offset">
+    
+    <div class="col-12 narrow text-center">
+        <h1 id="about">About Me</h1>
+        <!--portfolio image-->
+        <img src="assets/image/greg.png" alt="Me">
+        <!--lead lighter weight and bigger than regular paragraph text -->
+        <p class="lead">
+            <h3>My name is Greg Rojas and I am currently going to school to be a full stack developer</h3>
+        </p>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 personal">
+                <div class="row">
+                    <!--4 columns for the image section-->
+                    <div class="col-md-4">
+                        <img id="personal-image" src="assets/image/greg2.jpg" alt="travel">
+                    </div>
+                    <!--8 columns for the paragraph next to image-->
+                    <div class="col-md-8">
+                        <p>
+                            <h3>I love traveling and discovering new places.</h3>
+                        </p>
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i>
+                            I haven’t been everywhere but it’s on my list.
+                            <!--hr tag provides underline for the paragraph and give it class to style it-->
+                            <hr>
+                            <!--cite tag with an HTML symbol of hyphin-->
+                            <cite>&#8212;Susan Sontag</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 personal">
+                <div class="row">
+                    <!--4 columns for the image section-->
+                    <div class="col-md-4">
+                        <img id="personal-image" src="assets/image/greg4.jpg" alt="hiking">
+                    </div>
+                    <!--8 columns for the paragraph next to image-->
+                    <div class="col-md-8">
+                        <p>
+                            <h3>Hiking is one of my favorite things to do.</h3>
+                        </p>
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i>
+                            Sleeping bags are the soft tacos of the bear world.
+                            <!--hr tag provides underline for the paragraph and give it class to style it-->
+                            <hr>
+                            <!--cite tag with an HTML symbol of hyphin-->
+                            <cite>&#8212;Bears</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end course section-->
+
+
+<!--start features section-->
+
+<div id="features" class="offset">
+    <!--start of jumbotron
+    provides grey background below landing area-->
+    
+    <div class="jumbotron">
+        <div class="narrow">
+            <!--provides margin around column-->
+            <div class="col-12">
+                <!--give it class to seperates text from other h3 fonts-->
+                <h2 class="heading text-center">Features</h2>
+            </div>
+            <!--row text-center inside row class will be centered-->
+            <div class="row text-center">
+                <!--provides 3 medium columns with the size of 4/12-->
+                <div class="col-md-4">
+                    <!--create new class feature for icon-->
+                    <div class="feature">
+                        <!--icon class: fas type: fa-play-circle (play icon) size: fa 4x gives it the size 4x its regular size data-transform: shrink-3: 3/16 of the size of the icon to match with other icon better u-5: move up 5/16 of the original-->
+                        <i class="fas fa-play-circle fa-3x" data-fa-transform="shrink-3 up-5"></i>
+                        <h3>Projects</h3>
+                        <!--span tag to line up horizontally-->
+                        <span>
+                            <!--icon tag for link-->
+                            <a id="git-btn" class="btn btn-md" href="https://github.com/saynegrojas"><i
+                               class="fab fa-github fa-3x"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <!--class: fas type: fa-sliders-h size: fa-4x-->
+                        <i class="fas fa-sliders-h fa-3x" data-fa-transform="shrink-4.5 up-6"></i>
+                        <h3>Resume</h3>
+                        <span>
+                            <a class="btn btn-md"
+                                href="https://drive.google.com/drive/folders/1f6ThaQjMvzoMmXGbwSerG8zVwsMCYDzL?ths=true"><i
+                                class="fab fa-google-drive fa-3x"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <!--class: fab type: contact form icon fa-wpforms size: fa-4x-->
+                        <i class="fab fa-wpforms fa-3x" data-fa-transform="shrink-4.5 up-6"></i>
+                        <h3>Contacts</h3>
+                        <span>
+                            <!-- class: btn color: btn-secondary size: btn-md href: doesn't have a link yet target: sends user to another page-->
+                            <a class="btn btn-blue btn-md" href="https://www.linkedin.com/in/greg-rojas-953270182/"
+                               target="blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                            <!-- maybe put other social media later-->
+                            <a class="btn btn-danger btn-sm" href="https://www.google.com/" target="blank"><i
+                               class="fab fa-google-plus fa-2x"></i></a></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<!--end features section-->
+
+
+<!--start experience section-->
+
+<div id="experience" class="offset">
+    <!--span the entire window of fixed background image-->
+    <div class="fixed-background">
+        <!--class: row area: dark-->
+        <div class="row dark text-center">
+            <div class="col-12">
+                <h2 class="heading">Experience</h2>
+            </div>
+            <div class="col-md-4">
+                <h3>HTML</h3>
+                <div class="feature">
+                    <!--class: fas type: code icon fa-code size: 3x its regular size fa-3x-->
+                    <i class="fas fa-code fa-2x"></i>
+                    <p class="lead">Laying out the foundation with HTML</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Bootstrap</h3>
+                <div class="feature">
+                    <i class="fas fa-bold fa-2x"></i>
+                    <p class='lead'>Displaying features through Boostrap</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>CSS</h3>
+                <i class="fab fa-css3 fa-2x"></i>
+                <p class="lead">Show your frontend creativity with CSS</p>
+            </div>
+            <div class="col-md-4">
+                <h3>JavaScript</h3>
+                <div class="feature">
+                    <!--class: fas type: code icon fa-code size: 3x its regular size fa-3x-->
+                    <i class="fab fa-js fa-2x"></i>
+                    <p class="lead">Improving functionality with JavaScript</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Firebase</h3>
+                <div class="feature">
+                    <i class="fas fa-fire fa-2x"></i>
+                    <p class='lead'>Be more efficient with Firebase</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Node.js</h3>
+                <i class="fab fa-node-js fa-2x"></i>
+                <p class="lead">Improve server-side JavaScript through Node.js</p>
+            </div>
+        </div> <!--end of row dark-->
+
+        <!--background-->
+        <div class="fixed-wrap">
+            <!--class fixed where background image will go-->
+            <div class="fixed"></div>
+        </div>
+    </div> <!--end of fixed background-->
+</div> <!--end resources section-->
+
+
+<!--start contact section-->
+<div id="contact" class="offset"></div>
+<!--end contact section-->
+
+
+<!--- jquery -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<!-- fontawesome -->
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+</body>
+</html>

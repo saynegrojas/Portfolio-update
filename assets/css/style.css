@@ -1,0 +1,140 @@
+/*============= COURSE SECTION =============*/
+
+/*=== imported font ===*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+body {
+  overflow-x: hidden; /*all the content stays inside the browser and does not overflow outside of it*/
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+.jumbotron {
+  margin-bottom: 0px;
+  padding: 0 16px;
+}
+
+
+/*=== Navigation ===*/
+
+.navbar { /*navbar main class and what's inside of it*/
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem; /*1rem = 16px*/
+  letter-spacing: .1rem;
+  background: rgba(0,0,0,.6) !important; /*overrides any background set inside html file of navbar*/
+}
+.navbar-brand img { /*referencing the navbar logo's image, not the box*/
+  height: 2rem; /*resizing the logo image with half the original picture 32px*/
+}
+.navbar-nav li { /* space out navigation links in ul navbar-nav class & reference li*/
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link { /*reference multiple classes that are targeting the same thing*/
+  color: white;
+  padding: .8rem;
+}
+/*active class highlights when your mouse goes over it and changes color*/
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color:#1ebba3;
+}
+
+
+/*=== Landing ===*/
+
+.home-inner {
+  background-image: url(../image/web.jpg);
+}
+.caption { 
+  width:100%; /*website moves with the page small or large and fits its width*/
+  max-width:100%; /*does not allow for content inside caption to go outside the page when website sizes down*/
+  position: absolute; /*allows caption to be placed at a certain position on the page*/
+  top:38%; /*sets the page down 38% down from page*/
+  z-index: 1; /*will always display on top of the background image*/
+  color:whitesmoke;
+  text-transform: uppercase;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black; /*shadow horizontal, vertical, blur radius, color*/
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .5rem black; /*change radius sicne smaller font size*/
+  padding-bottom: 1.6rem;
+}
+.feature h2{
+  font-weight: normal;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 30px;
+  color:#1ebba3;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+.btn-md {
+  border-radius: 0;
+}
+#about {
+  color:#1ebba3;
+}
+
+
+/*=== Main ====*/
+
+img {
+  margin: 20px;
+  border-radius: 50%;
+}
+hr {
+  width: 60%;
+}
+.personal img {
+  width: 100%;
+  border-radius: 50%;
+}
+#go-to-button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem; /*1rem = 16px*/
+  letter-spacing: .1rem;
+  border: 1px solid white;
+  color: white;
+}
+#go-to-button:hover{
+  color:#1ebba3;
+}
+
+/*============ BOOTSTRAP ============*/
+/*==============
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+ 
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
